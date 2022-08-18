@@ -1,0 +1,298 @@
+body{
+    background: linear-gradient(to top, black 30%, rgb(20, 51, 20));
+    height: 120vh;
+}
+.white__logo {
+    width:15vh;
+}
+.lateral_menu {
+    margin-left: 15%;
+}
+.menu__container{
+    width: 100vh;
+    text-align: center;
+    float:left;
+    margin-left: 50vh;
+    padding:10vh;
+    height: 100vh;
+}
+.img_fluid{
+    width:80vh;
+}
+.card__titulo {
+    padding-top: 2vh;;
+    color: rgb(166, 175, 163);
+}
+.login__container{
+    padding: 3.5vh;
+    border:none;
+}
+.usuario__container{
+    border :1.5px solid rgb(18, 230, 18);
+    border-radius: 10px;
+}
+#botao__container{
+    background:black;
+    margin: 2vh 2vh;
+    color:green;
+    border:none;
+}
+.login__card {
+    font-size: 2.5vh;;
+}
+.login__card:hover {
+    color:white;
+}
+.navegador__container{
+    background:black;
+    width: 40vh;
+    height: 70vh;
+    opacity: 70%;
+    position:absolute;
+}
+.perfil__card {
+    width:25vh;
+    border:1.5px solid rgb(166, 175, 163);
+    border-radius: 200px;
+    margin-left:7vh;
+    margin-top: 5vh;
+}
+.name {
+    font-size:3vh;
+    color:white;
+    padding:2vh 2vh;
+    font-weight: bold;
+    text-align: center;
+}
+.inicio__card {
+    margin-left:40vh;
+    padding:5vh;
+}
+#favoritas_card {
+    margin-left:25%;
+    color:white;
+    background:black;
+    border: none;
+}
+#conta_card {
+    margin-left:30%;
+    color:white;
+    background:black;
+    border: none;
+}
+.card__sair {
+    margin-left: 30%;
+    background:black;
+    color:white;
+    border: none;
+
+}
+.card__sair:hover {
+    color:green;
+}
+
+.playlist__container{
+    position:relative;
+    margin-left:45vh;
+    padding:2.5vh;
+}
+h1 {
+    color:white;
+}
+h3 {
+    color:white;
+}
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1.5px solid rgb(18, 194, 12);
+	margin-bottom: .5em;
+    color:white;
+}
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+td, th {
+	padding: .7em;
+	margin: 0;
+    color:white;
+}
+th{
+    color:white;
+	font-weight: bold;
+	opacity: 70%;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 50vh;
+    border-radius: 15px;
+    max-width:90%;
+}
+
+#adicionar-musicas{
+	padding: .5em 2em;
+    border:0;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:black;
+    margin: 10px 0px;
+
+}
+
+#adicionar-musicas:active{
+	color:white;
+    background:green;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-musicas{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.musica-invalido {
+	background-color: lightcoral;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+    border-radius: 15px;
+}
+.invisivel {
+	display: none;
+}
+.player__container {
+    background-color: black;
+    bottom:0;
+    float:none;
+    width:100%;
+    position: relative;
+}
+.rodape {
+    text-align: center;
+    margin-left: 90vh;
+    position:absolute;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 980px) {
+    .background__fundo {
+        height: 150vh;
+    }
+    .menu__container{
+        width:100%;
+        margin-left: 0vh;
+        float:none;
+        height: 94vh;
+    }
+    #favoritas_card {
+        margin-left: 5%;
+        position: absolute;
+        margin-top: 1%;
+    }
+    .img_fluid{
+        width:30vh;
+        margin-top: 10vh;
+
+    }
+    .usuario__container{
+        color:white;
+    }
+    #botao__container {
+        width:14vh;
+    }
+    .rodape {
+        margin-left:0%;
+        position: relative;
+    }
+    .navegador__container{
+        width: 100%;
+        height: 100%;
+        opacity: 60%;
+    }
+    .perfil__card {
+        width: 10vh;
+        float: left;
+        margin-top: 10vh;
+        
+    }
+    #white__logo {
+
+    
+    }
+    #name__container {
+        text-align: left;
+    }
+    h2 {
+        font-size: 2vh;
+    }
+    .card__sair {
+        margin-left: 1vh;
+        border-radius: 2vh;
+    }
+    .playlist__container {
+        margin-left: 0vh;
+    }
+    .container {
+        margin-top: 20vh;
+    }
+    #adicionar-musicas {
+        border: 0px;
+    }
+    .player__container {
+        padding:2.5vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .background__fundo {
+        height: 115vh;
+    }
+    .card__sair {
+        margin-left: 35%;
+        border-radius: 15px;; 
+    }
+    #adicionar-musicas {
+        width: 50%;
+        border-radius: 20px;
+    }
+}

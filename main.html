@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3035-Desafio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+    <body class="background__fundo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="img/Logo_White.png" class="white__logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search"  aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+              </form>
+            </div>
+        </nav>
+        <div class="navegador__container">
+            <img class="perfil__card" src="img/perfil.jpg">
+            <div class="name" id="name__container"></div>
+            <div class="lateral_menu">
+                <button id="favoritas_card"><h2>favoritas</h2></button>
+                <button id="conta_card"><h2>conta</h2></button>
+                <a href="index.html">
+                    <button class="card__sair"><h2>Sair</h2></button>
+                </a>
+            </div>
+        </div>
+        <div class="playlist__container">  
+            <main>
+                <section class="container">
+                    <h1>Playlist de <div id="name__exibicao"></div> </h1>
+                    <label for="filtrar-tabela">Procurar:</label>
+                    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome da musica">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>artista</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-musicas">
+                            <tr class="musica" id="primeiro-musica">
+                                <td class="info-nome">Faint</td>
+                                <td class="info-artista">Linkin Park</td>							
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+    
+            <section class="container">
+                <h3 id="titulo-form">Adicionar nova musica</h3>
+                <ul id="mensagens-erro"></ul>
+                <form id="form-adiciona">
+                    <div class="">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text" placeholder="digite o nome da sua musica" class="campo">
+                    </div>
+                    <div class="grupo">
+                        <label for="artista">artista</label>
+                        <input id="artista" name="artista" type="text" placeholder="digite o nome do artista" class="campo">
+                    </div>
+    
+                    <button id="adicionar-musicas" class="botao bto-principal">Adicionar</button>
+                </form>
+            </section>  
+        </div> 
+    <div class="player__container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E3a8w9fBdakZX?utm_source=generator&theme=0" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    </body>
+</html>
